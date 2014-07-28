@@ -1,3 +1,5 @@
+include:
+  - i3wm
 
 # http://i3wm.org/docs/repositories.html
 
@@ -15,8 +17,3 @@ i3-ppa:
     #- gpgkey: 
     - require_in:
       - pkg: i3
-
-  pkg.latest:
-    - name: i3
-    #- refresh: True
-

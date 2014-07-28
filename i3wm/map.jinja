@@ -1,0 +1,7 @@
+
+{# TODO: s/i3wm/salt_name/g #}
+{% set i3wm = salt['grains.filter_by']({
+    'default': {
+        'pkg': 'i3',
+    },
+}, merge=salt['pillar.get']('i3wm:lookup')) %}
