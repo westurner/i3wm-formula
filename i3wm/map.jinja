@@ -3,5 +3,7 @@
 {% set i3wm = salt['grains.filter_by']({
     'default': {
         'pkg': 'i3',
+        'pkg_i3status': 'i3status',
+        'pkg_i3lock': 'i3lock',
     },
 }, merge=salt['pillar.get']('i3wm:lookup')) %}
